@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>gymmnasie 3.0</title>
+    <link
+      rel="stylesheet"
+      href="index_assets/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="index_assets/css/Contact-Form-Clean.css" />
+    <link rel="stylesheet" href="index_assets/css/Navigation-with-Button.css" />
+    <link rel="stylesheet" href="index_assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div></div>
+    <div class="contact-clean">
+      <form method="post" autocomplete="off">
+        <div class="alert alert-success" role="alert" id="userdetected">
+          <span class="text-uppercase"
+            ><strong>New User Detected</strong>.</span
+          >
+        </div>
+        <h2 class="text-center">Nils och Leons korttids minne test</h2>
+        <small class="form-text text-muted"
+          >Vi undersöker samband mellan individers förmåga att lagra bilder, ord
+          och nummer i sitt korttidsminne. För att se till att våra resultat är
+          jämförbara vill vi ta hänsyn till så många faktorer som vi tror kan
+          vara avgörande, alltså individen själv, ålder, kön och position.<br /><br /><br
+        /></small>
+        <div id="nameorganizer" class="form-group">
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            autocomplete="off"
+            maxlength="20"
+          /><small class="form-text text-muted"
+            >Detta måste inte vara erat riktiga namn, men vi skulle upskatta om
+            ni använder samma namn alla gånger ni gör testet för att säkerställa
+            att datan är pålitlig.</small
+          >
+        </div>
+        <div id="ageorganizer" class="form-group">
+          <input
+            class="form-control"
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Age"
+            min="0"
+            max="2"
+            step="5"
+            value=""
+            required=""
+            autocomplete="off"
+          /><small class="form-text text-muted"
+            >Vi ber om er ålder för att mer rättvist jämföra data mellan olika
+            åldersgrupper.</small
+          >
+        </div>
+        <div id="sleeporganizer" class="form-group">
+          <input
+            class="form-control"
+            type="number"
+            name="sleep"
+            id="sleep"
+            placeholder="Sleep hr"
+            min="0"
+            max="2"
+            step="1"
+            value=""
+            required=""
+            autocomplete="off"
+          /><small class="form-text text-muted"
+            >Akut total sömnbrist hos människor resulterar i minskningar av
+            korttidsprestanda och minne samt flera typer av långtidsminne.
+            Forskare som analyserade yrkesprestationer fann att 1 natt sömnbrist
+            och långvarig vakenhet minskade prestandan betydligt.
+          </small>
+        </div>
+        <div id="genderorganizer" class="form-group">
+          <select class="form-control" id="gender">
+            <optgroup label="Vänlig specifiera erat kön">
+              <option value="female">Kvinna</option>
+              <option value="male">Man</option>
+              <option value="other">Annan</option>
+              <option value="" selected="">---</option>
+            </optgroup>
+          </select>
+          <small class="form-text text-muted"></small>
+        </div>
+        <div id="positionorganizer" class="form-group">
+          <select class="form-control" id="position">
+            <optgroup label="Vänlig specifiera vilket passar dig bäst just nu">
+              <option value="sitting">Sittande</option>
+              <option value="standing">Stående</option>
+              <option value="laying-down">Liggandes</option>
+              <option value="" selected="">---</option>
+            </optgroup>
+          </select>
+        </div>
+        <small class="form-text text-muted"
+          >Tidiga tester tyder på att dessa två faktorer kan påverka resultaten
+          tillräckligt för det ska intessera oss.</small
+        >
+        <div id="submitbutton" class="form-group">
+          <button class="btn btn-primary btn-block" type="button">send</button
+          ><button
+            id="resetcookies"
+            class="btn btn-primary btn-block btn-lg text-lowercase text-warning"
+            type="button"
+          >
+            Reset all cookies
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="index_assets/js/jquery.min.js"></script>
+    <script src="index_assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="index_assets/js/startpage.js"></script>
+  </body>
+</html>
