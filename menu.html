@@ -1,8 +1,7 @@
 <!DOCTYPE html>
- <! -- this is published --> 
 <html>
   <head>
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="" />
 
     <meta charset="utf-8" />
     <meta
@@ -26,54 +25,77 @@
             Tack för att ni deltog i våran undersökning!
           </h2>
           <p class="text-center">
-            Ni ser denna sida antingen för ni redan utfört testerna! Ni får dock
-            gärna prova på någon av testerna igen (mer data för oss)!
+            Ni ser denna sida för att ni redan utfört testerna! Ni får dock
+            gärna prova på någon av testerna igen (mer data för oss)! Om ni har
+            frågor eller stötte på en bug får ni gärna <b>kontakta oss</b> på
+            <b>nils.kiefer@elev.ga.ntig.se</b> eller
+            <b>leon.boman@elev.ga.ntig.se</b>
           </p>
         </div>
         <div class="buttons">
-		  <a
-		  href="number_memory_index.html";
-            class="btn btn-primary text-uppercase text-dark"
+          <a
+            href="index.html"
+            ;
+            class="btn btn-primary text-uppercase text-light"
             role="button"
             data-bs-hover-animate="swing"
             href="#"
-            style="
-              background-image: url('menu_assets/img/maths-number-brain.jpg');
-              background-size: contain;
-              background-repeat: repeat;
-            "
-            ><mark>Nummer test</mark></a
+            style="background-size: contain; background-repeat: repeat"
+            >Till Huvudsida</a
           >
-		  <a
-		  href="word_memory_index.html";
+          <a
+            href="word_memory_index.html"
+            ;
             class="btn btn-light"
             data-bs-hover-animate="swing"
             type="button"
             style="
               background-repeat: round;
-              background-image: url('menu_assets/img/memories-clipart-dementia-17.png');
+
               background-size: contain;
             "
           >
-           <mark>Ord test</mark></a
-		  ><a
-			href="visual_memory_index.html";
+            Ord test</a
+          >
+          <a
+            href="number_memory_index.html"
+            ;
+            class="btn btn-primary text-uppercase text-light"
+            role="button"
+            data-bs-hover-animate="swing"
+            href="#"
+            style="background-size: contain; background-repeat: repeat"
+            >Nummer test</a
+          ><a
+            href="visual_memory_index.html"
+            ;
             class="btn btn-light"
             data-bs-hover-animate="swing"
             type="button"
-            style="
-              background-image: url('menu_assets/img/final_featured_art_joriel_memory.jpg');
-              background-size: contain;
-              background-repeat: round;
-            "
+            style="background-size: contain; background-repeat: round"
           >
-           <mark>Bild test</mark> 
+            Bild test
           </a>
         </div>
       </div>
     </div>
-    <script src="menu_assets/js/jquery.min.js"></script>
-    <script src="menu_assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="menu_assets/js/bs-init.js"></script>
+
+    <script src="encryptionanddecryption.js?ver=1.3"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mindplace/encrypt-string-with-javascript@master/crypto-js-aes.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@master/localDataStorage-1.3.0.trim.js"></script>
+    <script src="menu_assets/js/jquery.min.js?ver=1.3"></script>
+    <script src="menu_assets/bootstrap/js/bootstrap.min.js?ver=1.3"></script>
+    <script src="menu_assets/js/bs-init.js?ver=1.3"></script>
+    <script>
+      var elements = document.getElementsByClassName("buttons");
+
+      var myFunction = function () {
+        setWithExpiry("Gonethrumainurl", 1, 0.5);
+      };
+
+      for (var i = 0; i < elements.length; i++) {
+        elements[i].addEventListener("click", myFunction, false);
+      }
+    </script>
   </body>
 </html>
